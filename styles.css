@@ -124,6 +124,8 @@ header {
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -140,4 +142,11 @@ header {
     top: 8px;
     right: 8px;
     cursor: pointer;
+}
+
+/* === MODAL.ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
